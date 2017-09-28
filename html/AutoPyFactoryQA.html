@@ -1,0 +1,836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en_US" lang="en_US">
+<head>
+<link rel="stylesheet" href="https://twiki.grid.iu.edu/twiki/pub/TWiki/HeadlinesPlugin/style.css" type="text/css" media="all" />
+<title> AutoPyFactoryQA &lt; Documentation/Release3 &lt; TWiki    </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="icon" href="/twiki/pub/Documentation/Release3/WebPreferences/favicon.ico    " type="image/x-icon" />
+<link rel="shortcut icon" href="/twiki/pub/Documentation/Release3/WebPreferences/favicon.ico    " type="image/x-icon" />
+<link rel="alternate" href="https://twiki.grid.iu.edu/bin/edit/Documentation/Release3/AutoPyFactoryQA?_T=30 Apr 2017" type="application/x-wiki" title="edit AutoPyFactoryQA" />
+<meta name="SCRIPTURLPATH" content="/bin" />
+<meta name="SCRIPTSUFFIX" content="" />
+<meta name="TEXT_JUMP" content="Jump" />
+<meta name="TEXT_SEARCH" content="Search" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/bin/view/Documentation/Release3/WebRss" />    
+<base href="https://twiki.grid.iu.edu/bin/view/Documentation/Release3/AutoPyFactoryQA"></base>
+<!--BEHAVIOURCONTRIB--><script type="text/javascript" src="/twiki/pub/TWiki/BehaviourContrib/behaviour.compressed.js"></script>
+<script type="text/javascript" src="/twiki/pub/TWiki/TWikiJavascripts/twikilib.js"></script>
+<script type="text/javascript" src="/twiki/pub/TWiki/TWikiJavascripts/twikiWindow.js"></script>
+<script type="text/javascript" src="/twiki/pub/TWiki/TWikiJavascripts/twikiEvent.js"></script>
+<script type="text/javascript" src="/twiki/pub/TWiki/TWikiJavascripts/twikiHTML.js"></script>
+<script type="text/javascript" src="/twiki/pub/TWiki/TWikiJavascripts/twikiCSS.js"></script>
+<script type="text/javascript" src="/twiki/pub/TWiki/TWikiJavascripts/twikiForm.js"></script>
+<script type="text/javascript" src="/twiki/pub/TWiki/PatternSkin/pattern.js"></script><style type="text/css" media="all">
+@import url('/twiki/pub/TWiki/TWikiTemplates/base.css');
+</style><script type="text/javascript" src="/twiki/pub/TWiki/TWikiJavascripts/twikiStyles.js"></script><style type="text/css" media="all">
+#patternTopBar,
+#patternTopBarContentsOuter {
+	height:95px; /* top bar height; make room for header columns */
+}
+#twikinetTopToolBar,
+#twikinetTopToolBar table {
+	top:95px; /* top bar height */
+	height:48px;
+}
+#patternClearHeaderCenter,
+#patternClearHeaderLeft,
+#patternClearHeaderRight {
+	height:144px; /* 95 + border + 48 */
+}
+#twikinetLogo {
+	position:absolute;
+	width:100%;
+	height:95px;
+}
+#twikinetLogo a {
+	position:absolute;
+	display:block;
+	width:179px;
+	height:65px;
+	background:none;
+	top:10px;
+	left:340px;
+}
+#twikinetLogo a:link, 
+#twikinetLogo a:visited {
+	border:none;
+}
+#twikinetLogo a:hover {
+	border-style:none none solid none;
+	border-width:1px;
+	border-color:#c4cbd6;
+}
+#twikinetLogo a span {
+	display:none;
+}
+#patternOuter {
+	margin-left:220px;
+}
+#patternLeftBar {
+	width:220px;
+	margin-left:-220px;
+}
+</style>
+<style type="text/css" media="all">
+@import url("/twiki/pub/TWiki/TWikiNetSkin/layout.css");
+@import url("/twiki/pub/TWiki/TWikiNetSkin/style.css");
+@import url("/twiki/pub/TWiki/TWikiNetSkin/colors.css");
+@import url("/twiki/pub/TWiki/TWikiNetSkin/rounded_corners.css");
+</style>
+<style type="text/css" media="all">
+	/* Styles that are set using variables */
+	#patternLeftBar .patternWebIndicator,
+	.patternBookView .twikiTopRow {
+		background-color:#FFFFFF;
+	}
+	.patternBookView {
+		border-color:#FFFFFF;
+	}
+	.patternPreviewPage #patternMain {
+		/* uncomment to set the preview image */
+		/*background-image:url("/twiki/pub/TWiki/PreviewBackground/preview2bg.gif    ");*/
+	}
+	
+</style><style type="text/css" media="all">
+
+
+
+</style>
+<style type="text/css" media="all">
+	@import url("/twiki/pub/TWiki/TWikiNetSkin/print.css");
+</style><!--GOOGLEANALYTICSPLUGIN--><!-- Google Analytics script -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-69012-21']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body class="patternViewPage">
+<a name="PageTop"></a>
+<div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath"><span class="patternHomePathTitle">You are here: </span> <a href="/bin/view/Main/WebHome" class="twikiLink">TWiki    </a><span class='twikiSeparator'>&gt;</span><img src="/twiki/pub/TWiki/TWikiDocGraphics/web-bg-small.gif" border="0" alt="" width="13" height="13" style="background-color:#FFFFFF" />&nbsp;<a href="/bin/view/Documentation/Release3/WebHome">Documentation/Release3 Web</a><span class='twikiSeparator'>&gt;</span><a href="https://twiki.grid.iu.edu/bin/view/Documentation/Release3/AutoPyFactoryQA" title='Topic revision: 32 (20 Apr 2017 - 20:26:10)'>AutoPyFactoryQA</a> <span class='patternRevInfo'>(20 Apr 2017, <span class="twikiNewLink">JoseCaballero<a href="/bin/edit/Main/JoseCaballero?topicparent=Documentation/Release3.AutoPyFactoryQA" rel="nofollow" title="JoseCaballero (this topic does not yet exist; you can create it)">?</a></span>)</span></span><!-- /patternHomePath--></div><!--/patternTop--><div class="twikiContentHeader"></div><div class="patternContent"><div class="patternTopic"> <!-- some useful definitions  (need 3 white spaces before * to enable it) <ul>
+<li> Set UCL_PROMPT_ROOT = [root@factory ~]$
+</li> <li> Set VERSION = 2.4.5
+</li></ul> 
+-->
+<p />
+<h1><a name="Questions_and_Answers_related_Au"></a>  Questions and Answers related AutoPyFactory </h1>
+<!--
+<p />
+-->
+<div class="twikiToc"> <ul>
+<li> <a href="#1_About_this_Document">1  About this Document</a>
+</li> <li> <a href="#2_Applicable_versions">2  Applicable versions</a>
+</li> <li> <a href="#3_Questions_and_answers">3  Questions and answers</a> <ul>
+<li> <a href="#3_1_how_do_I_interpret_comments">3.1  how do I interpret comments like "fixed in version X" at the same time that "This documentation applies to the latest version of APF: Y"?</a>
+</li> <li> <a href="#3_2_what_do_I_do_if_I_want_to_ch">3.2  what do I do if I want to change the path of the log files?</a>
+</li> <li> <a href="#3_3_how_can_I_submit_to_a_remote">3.3  how can I submit to a remote HTCondor schedd?</a>
+</li> <li> <a href="#3_4_why_pilots_submitted_to_a_CR">3.4  why pilots submitted to a CREAM CE fail?</a>
+</li> <li> <a href="#3_5_to_which_type_of_resource_ta">3.5  to which type of resource targets I can submit pilots with AutoPyFactory?</a>
+</li> <li> <a href="#3_6_how_do_I_find_out_the_versio">3.6  how do I find out the version of AutoPyFactory I have installed?</a>
+</li> <li> <a href="#3_7_how_should_I_configure_the_f">3.7  how should I configure the factory if I want to renew the proxies myself?</a>
+</li> <li> <a href="#3_8_how_can_I_add_environment_va">3.8  how can I add environment variables to the condor submit file?</a>
+</li> <li> <a href="#3_9_how_can_I_add_any_arbitrary">3.9  how can I add any arbitrary line to the condor submit file?</a>
+</li> <li> <a href="#3_10_how_can_I_tune_the_number_o">3.10  how can I tune the number of pilots to be submitted depending on the number of activated jobs in PanDA and the number of pilots still pending?</a>
+</li> <li> <a href="#3_11_how_can_I_run_a_factory_wit">3.11  how can I run a factory with a special setup?</a>
+</li> <li> <a href="#3_12_my_factory_is_not_submittin">3.12  my factory is not submitting pilots anymore for a given queue, why?</a>
+</li> <li> <a href="#3_13_I_do_not_want_my_factory_to">3.13  I do not want my factory to show up in the generic AutoPyFactory web monitor</a>
+</li> <li> <a href="#3_14_how_can_I_increase_the_verb">3.14  how can I increase the verbosity level in the log files?</a>
+</li> <li> <a href="#3_15_How_can_I_change_the_non_ro">3.15  How can I change the non-root running user?</a>
+</li> <li> <a href="#3_16_How_can_I_force_the_value_o">3.16  How can I force the value of variable arguments in the condor submit file to be enclosed in between quotes?</a>
+</li> <li> <a href="#3_17_I_have_variables_in_the_DEF">3.17  I have variables in the [DEFAULT] section whose value requires interpolation, and they fail on some sections</a>
+</li> <li> <a href="#3_18_what_do_I_do_when_I_don_t_w">3.18  what do I do when I don't want to use an X509 proxy?</a>
+</li></ul> 
+</li> <li> <a href="#4_Troubleshooting">4  Troubleshooting</a> <ul>
+<li> <a href="#4_1_qcl_dir">4.1  qcl_dir</a>
+</li> <li> <a href="#4_2_condor_q_against_remote_pool">4.2  condor_q against remote pool</a>
+</li></ul> 
+</li></ul> 
+</div>
+<p />
+<h1><a name="1_About_this_Document"></a> 1  About this Document </h1>
+<p />
+This document is just a somehow free-format list of questions asked about <a href="/bin/view/Documentation/Release3/AutoPyFactory" class="twikiLink">AutoPyFactory</a>, and some of the answers provided. 
+The answer may be straight forward, or may be just some hints about where to look.
+<p />
+It does not include the complete list of questions, as this documented was started on August 10th, 2015. 
+It is not a FAQ page, therefore.
+<p />
+<p />
+Conventions used in this document:
+<p />
+<p />
+<font color="#808080">A <i>User Command Line</i> is illustrated by a green box that displays a prompt:</font>
+<p />
+<pre class="screen">
+  [user@client ~]$
+</pre>
+<p />
+<font color="#808080">A <i>Root Command Line</i> is illustrated by a red box that displays the <em>root</em> prompt:</font>
+<p />
+<pre class="rootscreen">
+  [root@factory ~]$
+</pre>
+<p />
+<font color="#808080"><i>Lines in a file</i> are illustrated by a yellow box that displays the desired lines in a file:</font>
+<pre class="file">
+priorities=1
+</pre>
+<p />
+<p />
+<h1><a name="2_Applicable_versions"></a> 2  Applicable versions </h1>
+This document mostly applies to the version of AutoPyFactory 2.4.5 and higher. Some answer may be valid for older versions too, but that is not guaranteed. 
+<p />
+<h1><a name="3_Questions_and_answers"></a> 3  Questions and answers </h1>
+<p />
+<!--
+<p />
+Maybe we need an entry on "condor configuration" ???
+<p />
+-->
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_1_how_do_I_interpret_comments"></a> 3.1  how do I interpret comments like "fixed in version X" at the same time that "This documentation applies to the latest version of APF: Y"? </span></h2>
+<p />
+When the versions X and Y are different, usually that means that a bug was found in the version Y -the one the current documentation is for-, 
+and a fix for that bug will be released in a future version -X or higher-, but not yet. 
+<br>
+It can also mean that we forgot to update the message "This documentation applies to the latest version of APF... " <img src="https://twiki.grid.iu.edu/twiki/pub/TWiki/SmiliesPlugin/wink.gif" alt="wink" title="wink" border="0" /> 
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_2_what_do_I_do_if_I_want_to_ch"></a> 3.2  what do I do if I want to change the path of the log files? </span></h2>
+<p />
+Some explanation can be found <a href="https://twiki.grid.iu.edu/bin/view/Documentation/Release3/AutoPyFactoryConfiguration#5_2_logrotation" target="_top">here</a> 
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_3_how_can_I_submit_to_a_remote"></a> 3.3  how can I submit to a remote HTCondor schedd? </span></h2>
+<p />
+It is not needed the APF host also be an HTCondor schedd. 
+Remote submission is allowed. 
+The queryargs -for the BatchStatus Plugin- and the submitargs -for the Submit Plugin- can be used to pass any arbitrary options, for example to refer to a remote schedd.
+<p />
+<pre class="file">
+    batchsubmitplugin = CondorLocal
+    batchsubmit.condorlocal.submitargs = -remote &lt;remote_schedd&gt;:&lt;port&gt;
+ 
+    batchstatusplugin = Condor
+    batchstatus.condor.queryargs = -pool &lt;remote_pool&gt; -name &lt;remote_schedd&gt;
+</pre>
+<p />
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_4_why_pilots_submitted_to_a_CR"></a> 3.4  why pilots submitted to a CREAM CE fail? </span></h2>
+<p />
+If your pilots being submitted to a CREAM CE fail, with this type of content in the condor log file:
+<p />
+<pre class="file">
+        009 (45454545.000.000) 12/10 20:35:01 Job was aborted by the user.
+            CREAM error: BLAH error: submission command failed (exit code = 1) (stdout:) (stderr:) N/A (jobId = CREAM123456789)
+</pre>
+<p />
+it is possible that the grid_resource line in the condor submit file is not correct. 
+AutoPyFactory creates a line like this
+<p />
+<pre class="file">
+grid_resource = cream matrix.net:8443/ce-cream/services/CREAM2 pbs queuename
+</pre>
+<p />
+while perhaps the CE needs a line like
+<p />
+<pre class="file">
+grid_resource = cream matrix.net:8443/queuename
+</pre>
+<p />
+If that is the case, or similar, there is dirty trick to fix it. Add this line to your queue configuration (typically in queues.conf):
+<p />
+<pre class="file">
+batchsubmit.condorcream.condor_attributes.grid_resource = cream matrix.net:8443/queuename
+</pre>
+<p />
+<p />
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_5_to_which_type_of_resource_ta"></a> 3.5  to which type of resource targets I can submit pilots with AutoPyFactory? </span></h2>
+<p />
+In principle, to those supported by HTCondor. That includes globus GT2, globus GT5, HTCondor-CE, CREAM CE, NorduGrid CE, Amazon EC2, a local or remote HTCondor cluster,...
+If HTCondor cannot submit to a given resource, then AutoPyFactory cannot either.
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_6_how_do_I_find_out_the_versio"></a> 3.6  how do I find out the version of AutoPyFactory I have installed? </span></h2>
+<p />
+A rpm command will give the answer:
+<p />
+<pre class="rootscreen">
+[root@factory ~]$ rpm -qa | grep autopyfactory
+autopyfactory-tools-1.0.1-1.noarch
+autopyfactory-2.4.1-1.noarch
+</pre>
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_7_how_should_I_configure_the_f"></a> 3.7  how should I configure the factory if I want to renew the proxies myself? </span></h2>
+<p />
+If you don't want the factory to renew the x509 proxies for you because you have in place a different mechanism for that, you only need to disable the renewal feature. 
+But, if the factory is configured to submit to grid sites or any other resource that requires an x509 file, the proxymanager still must be enabled anyways. 
+So, in your <code><b>autopyfactory.conf</b></code> file:
+<p />
+<pre class="file">
+proxymanager.enabled = True
+</pre>
+<p />
+but in your <code>proxy.conf</code> file:
+<pre class="file">
+renew = False
+</pre>
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_8_how_can_I_add_environment_va"></a> 3.8  how can I add environment variables to the condor submit file? </span></h2>
+<p />
+Using the configuration variable <code>batchsubmit.&lt;plugin&gt;.environ</code>. 
+For details, check the <a href="https://twiki.grid.iu.edu/bin/view/Documentation/Release3/AutoPyFactoryReferenceManual#6_5_Batch_Submit_Plugin_variable" target="_top">Reference Manual</a>
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_9_how_can_I_add_any_arbitrary"></a> 3.9  how can I add any arbitrary line to the condor submit file? </span></h2>
+<p />
+Using the configuration variable <code>batchsubmit.&lt;plugin&gt;.condor_attributes</code>. 
+For details, check the <a href="https://twiki.grid.iu.edu/bin/view/Documentation/Release3/AutoPyFactoryReferenceManual#6_5_Batch_Submit_Plugin_variable" target="_top">Reference Manual</a>
+<p />
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_10_how_can_I_tune_the_number_o"></a> 3.10  how can I tune the number of pilots to be submitted depending on the number of activated jobs in PanDA and the number of pilots still pending? </span></h2>
+<p />
+The sched plugin <code>Ready</code> checks the number of activated jobs, the number of idle pilots, and returns the difference. 
+For details on the sched plugins parameters, check the <a href="https://twiki.grid.iu.edu/bin/view/Documentation/Release3/AutoPyFactoryReferenceManual#6_4_Sched_Plugin_variables" target="_top">Reference Manual</a>
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_11_how_can_I_run_a_factory_wit"></a> 3.11  how can I run a factory with a special setup? </span></h2>
+<p />
+If you need to ensure some environment variables are set when running the factory, for example, you can add any custom setup in the <code>/etc/sysconfig/autopyfactory</code> file. It is sourced by the daemon init script <code>/etc/init.d/autopyfactory</code> before start running.  
+<p />
+<pre class="file">
+OPTIONS="--debug --sleep=60 --runas=autopyfactory --log=/var/log/autopyfactory/autopyfactory.log"
+CONSOLE_LOG=/var/log/autopyfactory/console.log
+env | sort >> $CONSOLE_LOG
+
+source /path/to/my/custom/factory/setup.sh
+</pre>
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_12_my_factory_is_not_submittin"></a> 3.12  my factory is not submitting pilots anymore for a given queue, why? </span></h2>
+<p />
+First check that queue has no <code><b>enabled=False</b></code> set in the configuration file <code>/etc/autopyfactory/queues.conf</code>
+If that was not the problem, there are several main reasons why this can happens:
+<p /> <ul>
+<li> One reason is that there are no ready jobs in the WMS system (for example, in PanDA). Standard factory configuration does not submit pilots when there are no jobs.  
+</li></ul> 
+<p /> <ul>
+<li> Another reason may be data corruption from the CE/gatekeeper. Sometimes it happens the CE/gatekeeper reports back to condor a fake number of IDLE and RUNNING pilots. If the number of IDLE pilots returned is high enough (even if that number is not real), the factory most probably will stop submitting and wait for those pending pilot to start running and finish. 
+</li></ul> 
+<p /> <ul>
+<li> The queue in the WMS system is disabled.
+</li></ul> 
+<p /> <ul>
+<li> There is no WMSStatus or BatchStatus information available.
+</li></ul> 
+<p />
+How to check?
+<p /> <ul>
+<li> for the first case, it is enough to check the AutoPyFactory log files, with a command like this:
+</li></ul> 
+<p />
+<pre class="rootscreen">
+[root@factory ~]$ grep ANALY_BNL_SHORT-gridgk04-htcondor /var/log/autopyfactory/autopyfactory.log | grep schedplugin
+...
+2015-08-10 18:38:20,363 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] ReadySchedPlugin.py:34 calcSubmitNum(): Starting.
+2015-08-10 18:38:20,364 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] ReadySchedPlugin.py:60 _calc(): pending = 10 running = 17 offset = 0
+2015-08-10 18:38:20,364 (UTC) [ INFO ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] ReadySchedPlugin.py:68 _calc(): input=0; activated=83; offset=0 pending=10; running=17; Return=73
+2015-08-10 18:38:20,364 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] ScaleSchedPlugin.py:31 calcSubmitNum(): Starting with n=73
+2015-08-10 18:38:20,364 (UTC) [ INFO ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] ScaleSchedPlugin.py:36 calcSubmitNum(): Return=19
+2015-08-10 18:38:20,364 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] MaxPerCycleSchedPlugin.py:23 calcSubmitNum(): Starting with n=19
+2015-08-10 18:38:20,365 (UTC) [ INFO ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] MaxPerCycleSchedPlugin.py:35 calcSubmitNum(): input=19; Return=19
+2015-08-10 18:38:20,365 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] MinPerCycleSchedPlugin.py:24 calcSubmitNum(): Starting with n=19
+2015-08-10 18:38:20,365 (UTC) [ INFO ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] MinPerCycleSchedPlugin.py:34 calcSubmitNum(): Return=19
+2015-08-10 18:38:20,365 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] StatusTestSchedPlugin.py:26 calcSubmitNum(): Starting.
+2015-08-10 18:38:20,366 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] StatusTestSchedPlugin.py:37 calcSubmitNum(): site status is online
+2015-08-10 18:38:20,366 (UTC) [ INFO ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] StatusTestSchedPlugin.py:45 calcSubmitNum(): [Queue is not test] input=19; Return=19
+2015-08-10 18:38:20,366 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] StatusOfflineSchedPlugin.py:29 calcSubmitNum(): Starting.
+2015-08-10 18:38:20,366 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] StatusOfflineSchedPlugin.py:51 calcSubmitNum(): site status is online
+2015-08-10 18:38:20,367 (UTC) [ INFO ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] StatusOfflineSchedPlugin.py:66 calcSubmitNum(): [Queue is not offline] input=19; Return=19
+2015-08-10 18:38:20,367 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] MaxPendingSchedPlugin.py:25 calcSubmitNum(): Starting with n=19
+2015-08-10 18:38:20,367 (UTC) [ DEBUG ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] MaxPendingSchedPlugin.py:36 calcSubmitNum(): Pending is 10
+2015-08-10 18:38:20,367 (UTC) [ INFO ] main.schedplugin[ANALY_BNL_SHORT-gridgk04-htcondor] MaxPendingSchedPlugin.py:53 calcSubmitNum(): Return=0 
+</pre>
+<p />
+Pay attention to the messages coming from the ReadySchedPlugin. Field <strong>Activated</strong> will tell you is there are jobs or not. 
+<p /> <ul>
+<li> For the second scenario, best way is to run condor_q and see how it says. When possible, print the JobStatus information, or equivalent:
+</li></ul> 
+<p />
+<pre class="rootscreen">
+[root@factory ~]$ condor_q  -format '%s.' ClusterId -format '%s ' ProcId -format ' MATCH_APF_QUEUE=%s' match_apf_queue -format ' JobStatus=%d\n' JobStatus 
+1230.0 MATCH_APF_QUEUE=BNL_PROD-gridgk01-htcondor JobStatus=1
+1231.0 MATCH_APF_QUEUE=BNL_ATLAS_2-gridgk04-htcondor JobStatus=2
+1232.0 MATCH_APF_QUEUE=ANALY_BNL_LONG-gridgk01-htcondor JobStatus=2
+1233.0 MATCH_APF_QUEUE=BNL_ATLAS_2-gridgk01-htcondor JobStatus=2
+1234.0 MATCH_APF_QUEUE=BNL_ATLAS_2-gridgk07-htcondor JobStatus=2
+1235.0 MATCH_APF_QUEUE=BNL_PROD_MCORE-gridgk07-htcondor JobStatus=1
+</pre>
+<p />
+Also, when it is installed, try running command apf-queue-status
+<p />
+<pre class="rootscreen">
+[root@factory ~]$ apf-queue-status
+Mon Aug 10 15:12:24 2015
+-----------------------------------------------------------------
+ANALY_BNL_LONG-gridgk04-htcondor 	UNSUB = 0	IDLE = 4	RUNNING = 29	COMPLETE = 0	HELD = 0	ERROR = 0	REMOVED = 0	
+ANALY_BNL_LONG-gridgk05      	UNSUB = 0	PENDING = 10	STAGE_IN = 0	ACTIVE = 10	STAGE_OUT = 0	SUSP = 0	DONE = 0	FAILED = 0	
+</pre>
+<p />
+<p /> <ul>
+<li> the 3rd case applies mostly to PanDA. Check if the PanDA queue is <strong>offline</strong>. In that case, AutoPyFactory usually does not submit pilots.
+</li></ul> 
+<p /> <ul>
+<li> Besides all of that, you can also check the queue object has actually been created. A grep command like this may help:
+</li></ul> 
+<p />
+<pre class="rootscreen">
+[root@factory ~]$ grep "APFQueue: Initializing object..." /var/log/autopyfactory/autopyfactory.log
+...
+2015-08-10 19:31:51,271 (UTC) [ DEBUG ] main.apfqueue[ANALY_BNL_LONG-gridgk02-htcondor] factory.py:870 __init__(): APFQueue: Initializing object...
+2015-08-10 19:31:51,557 (UTC) [ DEBUG ] main.apfqueue[BNL_ATLAS_RCF-gridgk02-htcondor] factory.py:870 __init__(): APFQueue: Initializing object...
+2015-08-10 19:31:51,859 (UTC) [ DEBUG ] main.apfqueue[BNL_ATLAS_RCF-gridgk06-htcondor] factory.py:870 __init__(): APFQueue: Initializing object...
+...
+</pre>
+<p /> <ul>
+<li> When there is no WMS Status or Batch Status information available, the Sched Plugin Ready returns 0. To check if that is the case, search for a line like this in the logs file:
+</li></ul> 
+<p />
+<pre class="file">
+2015-11-30 03:33:14,326 (UTC) [ WARNING ] main.schedplugin[A_QUEUE_AT_A_SOTE] ReadySchedPlugin.py:39 calcSubmitNum(): Missing info. wmsinfo is WMSQueueInfo: notready=0, ready=532,     running=314, done=0, failed=0, unknown=0 batchinfo is None
+</pre>
+<p />
+If the WMSQueueInfo is None, something is broken in the communication with the WMS service (for example, with a PanDA server).
+If the batchinfo is None, most probably the condor daemon is not running and command condor_q does not work.
+<p />
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_13_I_do_not_want_my_factory_to"></a> 3.13  I do not want my factory to show up in the generic AutoPyFactory web monitor </span></h2>
+<p />
+Solution currently for this is to remove the config variable <code><b>monitorsection</b></code> from file <code>/etc/autopyfactory/queues.conf</code>
+<p />
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_14_how_can_I_increase_the_verb"></a> 3.14  how can I increase the verbosity level in the log files? </span></h2>
+<p />
+Edit file <code>/etc/sysconfig/autopyfactory</code> and change the loglevel from INFO level to DEBUG level:
+<p />
+<pre class="file">
+OPTIONS="--debug --sleep=60 --runas=autopyfactory --log=/var/log/autopyfactory/autopyfactory.log"
+</pre>
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_15_How_can_I_change_the_non_ro"></a> 3.15  How can I change the non-root running user? </span></h2>
+<p />
+The default configuration sets the factory to run as user <strong>autopyfactory</strong>.
+That can be changed in file <code>/etc/sysconfig/autopyfactory</code>, via the configuration variable <code><b>--runas</b></code>
+<p />
+<pre class="file">
+OPTIONS="--debug --sleep=60 --runas=autopyfactory --log=/var/log/autopyfactory/autopyfactory.log"
+</pre>
+<p />
+Note that the RPM creates user account <strong>autopyfactory</strong> during the installation process. If you want to run as a different user, you will need to create that account manually.
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_16_How_can_I_force_the_value_o"></a> 3.16  How can I force the value of variable arguments in the condor submit file to be enclosed in between quotes? </span></h2>
+<p />
+If you want the condor submit file to look like this
+<p />
+<pre class="file">
+arguments = "--wrapperloglevel=debug ...-p 25443 -u user -u managed"
+</pre>
+<p />
+you only need to add the quoutes in the queues configuration file. Typically, like this:
+<p />
+<pre class="file">
+[DEFAULT]
+executable.defaultarguments = --wrapperloglevel=debug ...-p 25443 -u user
+
+[ANALY_QUEUE]
+executable.arguments = "%(executable.defaultarguments)s -u managed"
+</pre>
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_17_I_have_variables_in_the_DEF"></a> 3.17  I have variables in the <code>[DEFAULT]</code> section whose value requires interpolation, and they fail on some sections </span></h2>
+<p />
+When the <code>[DEFAULT]</code> section in a given configuration file contains variables like this
+<p />
+<pre class="file">
+[DEFAULT]
+foo = %(bar)s blah
+</pre>
+<p />
+the variable <code>bar</code> is expected to be defined in every section of that configuration file.
+When that is not the case, a traceback like this is printed out:
+<p />
+<pre class="rootscreen">
+    self._interpolate_some(option, L, rawval, section, vars, 1)
+  File "/usr/lib64/python2.6/ConfigParser.py", line 646, in _interpolate_some
+    option, section, rest, var)
+InterpolationMissingOptionError: Bad value substitution:
+section: [ANALY_TRIUMF_ARC-ce3]
+option : foo
+key    : bar
+rawval : blah
+</pre>
+<p />
+This will mostly ocurr in the case of queues configuration files, where the variable <code>foo</code> is being resolved in a section where it is not needed. 
+The simplest solution is to provide for a fake value for token <code>bar</code> to allow the interpolation to work.
+If that is not desired because it is confusing, or there are too many sections where it happens, then a good idea is to split the configuration file into two separate files, each one with the right <code>[DEFAULT]</code> section, and list both of them, split by comma, in the factory configuration file.
+<p />
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_18_what_do_I_do_when_I_don_t_w"></a> 3.18  what do I do when I don't want to use an X509 proxy? </span></h2>
+<p />
+To avoid AutoPyFactory from trying to get X509 credentials, set the variable <code>batchsumit.&lt;your_submit_plugin&gt;.proxy</code> to <code>None</code>
+<p />
+<h1><a name="4_Troubleshooting"></a> 4  Troubleshooting </h1>
+<p />
+This section contains reported tracebacks and other misbehavior, and their possible explanation.
+They mean there is a bug in the code, otherwise, no traceback should appear in the log files. But bugs happen. And, even if they are fixed in the next release, the problem persist for those instances running old versions. 
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="4_1_qcl_dir"></a> 4.1  qcl_dir </span></h2>
+<p />
+<pre class="file">
+2017-03-03 08:29:53,565 (UTC) [ ERROR ] main factory.py:435 run(): Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/autopyfactory/factory.py", line 411, in run
+    f.run()
+  File "/usr/lib/python2.6/site-packages/autopyfactory/factory.py", line 657, in run
+    self.reconfig()
+  File "/usr/lib/python2.6/site-packages/autopyfactory/factory.py", line 695, in reconfig
+    tmpqcl = config_plugin.getConfig()
+  File "/usr/lib/python2.6/site-packages/autopyfactory/plugins/factory/config/File.py", line 69, in getConfig
+    raise ConfigFailure('Failed to create queues ConfigLoader: %s' %err)
+ConfigFailure: Failed to create queues ConfigLoader: local variable 'qcl_dir' referenced before assignment
+</pre>
+<p />
+A traceback related variable <code>qcl_dir</code> usually means the configuration variable <code>queuesDirConf</code> has been set in file <code>autopyfactory.con</code>, but the directory does not actually exists, or it is empty. 
+<br>
+Most probably, after a fresh deployment, it is set as <code>queuesDirConf = /etc/autopyfactory/queues.d/</code>, but that directory does not exists.
+<br>
+Note: fixed in version 2.4.10
+<p />
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="4_2_condor_q_against_remote_pool"></a> 4.2  condor_q against remote pool </span></h2>
+<p />
+<pre class="file">
+2017-03-10 17:47:20,581 (UTC) [ WARNING ] main.condor condor.py:356 querycondor(): Leaving with bad return code. rc=1 err=Error: Collector has no record of schedd/submitter
+</pre>
+<p />
+This happens due a bug in the code that creates the condor_q command line incorrectly, with a missing white space between arguments.
+<br>
+Note: fixed in version 2.4.10
+<p /> </div><!-- /patternTopic-->
+<div class="twikiContentFooter"></div></div><!-- /patternContent-->
+<a name="topic-actions"></a><div class="twikinetRounded twikinetRoundedTopicActions"><div class="rCRounded"><div class="rCTR"><div class="rCTL"></div><!--/rCTL--><div class="patternTopicActions"><div class="patternTopicAction"><span class="patternActionButtons"><span class="patternButton"><a href='https://twiki.grid.iu.edu/bin/edit/Documentation/Release3/AutoPyFactoryQA?t=1493567476;nowysiwyg=1' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='twikiAccessKey'>E</span>dit</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span class='patternButton'><a href='/bin/attach/Documentation/Release3/AutoPyFactoryQA' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='twikiAccessKey'>A</span>ttach</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span class='patternButton'><a href='/bin/view/Documentation/Release3/AutoPyFactoryQA?cover=print' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='twikiAccessKey'>P</span>rint version</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><span><a href='/bin/rdiff/Documentation/Release3/AutoPyFactoryQA?type=history' rel='nofollow' title='View total topic history' accesskey='h'><span class='twikiAccessKey'>H</span>istory</a></span>: r32&nbsp;<a rel="nofollow" href="/bin/rdiff/Documentation/Release3/AutoPyFactoryQA?rev1=32;rev2=31">&lt;</a>&nbsp;<a rel="nofollow" href="/bin/view/Documentation/Release3/AutoPyFactoryQA?rev=31">r31</a>&nbsp;<a rel="nofollow" href="/bin/rdiff/Documentation/Release3/AutoPyFactoryQA?rev1=31;rev2=30">&lt;</a>&nbsp;<a rel="nofollow" href="/bin/view/Documentation/Release3/AutoPyFactoryQA?rev=30">r30</a>&nbsp;<a rel="nofollow" href="/bin/rdiff/Documentation/Release3/AutoPyFactoryQA?rev1=30;rev2=29">&lt;</a>&nbsp;<a rel="nofollow" href="/bin/view/Documentation/Release3/AutoPyFactoryQA?rev=29">r29</a>&nbsp;<a rel="nofollow" href="/bin/rdiff/Documentation/Release3/AutoPyFactoryQA?rev1=29;rev2=28">&lt;</a>&nbsp;<a rel="nofollow" href="/bin/view/Documentation/Release3/AutoPyFactoryQA?rev=28">r28</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/bin/oops/Documentation/Release3/AutoPyFactoryQA?template=backlinksweb' rel='nofollow' title='Search the Documentation/Release3 Web for topics that link to here' accesskey='b'><span class='twikiAccessKey'>B</span>acklinks</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/bin/view/Documentation/Release3/AutoPyFactoryQA?raw=on' rel='nofollow' title='View raw text without formatting' accesskey='r'><span class='twikiAccessKey'>R</span>aw View</a></span><span class='twikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/bin/oops/Documentation/Release3/AutoPyFactoryQA?template=oopsmore&amp;param1=32&amp;param2=32' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='twikiAccessKey'>M</span>ore topic actions</a></span></span></div><!--/patternTopicAction--></div><!--/patternTopicActions--></div><!--/rCTR--><div class="rCBR"><div class="rCBL"></div><!--/rCBL--></div><!--/rCBR--></div><!--/rCRounded--></div><!--/twikinetRounded--><div class="patternInfo twikiGrayText"><div class="patternRevInfo">Topic revision: r32 - 20 Apr 2017 - 20:26:10 - <span class="twikiNewLink">JoseCaballero<a href="/bin/edit/Main/JoseCaballero?topicparent=Documentation/Release3.AutoPyFactoryQA" rel="nofollow" title="JoseCaballero (this topic does not yet exist; you can create it)">?</a></span></div><!-- /patternRevInfo--></div><!-- /patternInfo-->
+</div><!-- /patternMainContents-->
+</div><!-- /patternMain--><div id="patternLeftBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternLeftBarContents">
+<head>
+	<style type="text/css" media="all">
+	
+		.float-left {
+			float:	left;
+		}
+
+		.float-right {
+			float:	right;
+		}
+
+		.rounded {
+      		border-radius:	 		8px;
+			-moz-border-radius: 	8px;
+			-webkit-border-radius:	8px;		
+		}
+		
+		.rounded-top {
+      		border-radius:	 		8px 8px 0px 0px;
+			-moz-border-radius: 	8px 8px 0px 0px;
+			-webkit-border-radius:	8px 8px 0px 0px;		
+		}
+		
+		.bordered {
+			border:	1px solid #AAAAAA;
+		}
+
+		.bordered-bottom {
+			border-bottom:	1px solid #AAAAAA;
+		}
+
+		.high-contrast {
+			color:		#FF6600;
+			background: #000060;		
+		}
+
+                .low-contrast {
+			color:		#FF6600;
+			background: #ADD8E6;		
+		}
+
+	
+		.container {
+display: inline-block;
+			margin:		0;
+			padding:	0;
+		}
+		
+		.box {
+			display:				block;
+			margin:			 0;
+			padding:		0;
+		}
+
+                #head-block {
+                        color:               #FF6600;	
+                        background:    #333380;
+                }
+							
+		#menu {
+			font-family:	"Lucida Grande", sans-serif;
+			font-size:		small;
+			margin:		0px 0px 10px 0px;
+			padding:	0px 0px 0.3em 0px;
+			background: #EAEDF2;
+		}
+							
+		#menul {
+			font-family:	"Lucida Grande", sans-serif;
+			font-size:		small;
+			margin:		0px 0px 10px 0px;
+			padding:	0px 0px 0.3em 0px;
+			background: #F4F6F9
+
+		}		
+		#head {
+			margin:		0px;
+			padding:	0.2em 5px 0.2em 10px;
+			font-size:	normal;
+			font-weight:	bold;
+			color:			#FF6600;	
+		}
+		
+		#head a {
+			text-decoration:	none;
+			color:			#FF6600;	
+		}
+
+		#head a:hover {
+			background: 		#EAEDF2;
+			text-decoration:	none;
+			color:			#FFBB00;	
+		}
+
+		#head a:visited {
+			text-decoration:	none;
+			color:			#FF6600;	
+		}
+
+		#head a:active {
+			text-decoration:	none;
+			color:			#FF6600;	
+		}
+
+		#head a:link {
+			text-decoration:	none;
+			color:			#FF6600;	
+		}
+
+                #iteml {
+			padding:	0.1em 5px 0.0em 10px;
+                }
+
+		#iteml a {
+			background: 		#F4F6F9
+			text-decoration:	none;
+			color:			#000044;			
+		}
+
+		#iteml a:hover {
+			background: 		#F4F6F9
+			text-decoration:	none;
+			color:			#FF6600;			
+		}
+		#item {
+			padding: 0.1em 5px 0.0em 10px;
+		}
+		
+		#item a {
+			background: 		#EAEDF2;
+			text-decoration:	none;
+			color:			#000044;			
+		}
+
+		#item a:hover {
+			background: 		#EAEDF2;	
+			text-decoration:	none;
+			color:			#FF6600;			
+		}
+</style>
+</head>
+Hello, <a href="/bin/view/Main/TWikiGuest" class="twikiLink">TWikiGuest</a>!<br>
+<a href="https://twiki.grid.iu.edu/bin/view/TWiki/TWikiRegistration" target="_top">Register</a>
+<p />
+<!-- <ul>
+<li> Local ICO_LINKEDIN  = <img src="/twiki/pub/Documentation/WebLeftBarTop/linkedin-favicon_v3.ico" alt="linkedin-favicon_v3.ico" width='16' height='16' />
+</li> <li> Local ICO_FACEBOOK = <img src="/twiki/pub/Documentation/WebLeftBarTop/FaceBook_32x32.png" alt="FaceBook_32x32.png" width='15' height='15' />
+</li> <li> Set ICO_CAMPFIRE = <img src="/twiki/pub/Documentation/WebLeftBarTop/campfire-logo.jpg" alt="campfire-logo.jpg" width='25' height='20' />
+</li></ul> 
+-->
+<p />
+	<div class="container">
+<p />
+<p />
+		<div class="box rounded bordered" id="menu">
+			<div class="box rounded-top high-contrast" id="head"><a  style="" href="http://www.opensciencegrid.org" target="_top" title="Go to the OSG Website">Open Science Grid</a></div>
+			<div id="item"><a  style="" href="/bin/view/Documentation/WhatIsOSG" class="twikiLink" title="Description of OSG">About OSG</a></div>
+			<div id="item"><a  style="" href="/bin/view/Documentation/WhatIsVO" class="twikiLink" title="Description of Virtual Organizations">About VOs</a></div>
+			<div id="item"><a  style="" href="/bin/view/Documentation/NavOsgOperations" class="twikiLink" title="OSG Global Operations Center">Operations</a></div>
+			<div id="item"><a  style="" href="/bin/view/Documentation/Release3/NavOsgSecurity" class="twikiLink" title="Security Links">Security</a></div>
+			<div id="item"><a  style="" href="/bin/view/Documentation/WebHome" class="twikiLink" title="Technical Documentation Hub">Documentation</a></div>
+			<div id="item"><a  style="" href="/bin/view/Documentation/GlossaryOfTerms" class="twikiLink" title="Glossary of Terms Related to OSG">Glossary of Terms</a></div>
+		</div>
+<p />
+<p />
+<p />
+		<div class="box rounded bordered" id="menu">
+	                <div class="box rounded-top high-contrast" id="head"><a  style="" href="/bin/view/Documentation/Release3/NavUserMain" class="twikiLink" title="End User Information">End Users</a></div>
+	                <div id="item"><a  style="" href="/bin/view/Documentation/Release3/NavUserJoin" class="twikiLink" title="Join the OSG">Grid Accounts</a></div>
+	                <div id="item"><a  style="" href="/bin/view/Documentation/Release3/NavUserApplications" class="twikiLink" title="How to run jobs on the grid">Grid Basics</a></div>
+	                <div id="item"><a  style="" href="/bin/view/Documentation/Release3/NavUserResources" class="twikiLink" title="Run complex/demanding grid applications">Advanced Use Cases</a></div>
+	                <div id="item"><a  style="" href="/bin/view/Documentation/UserHelp" class="twikiLink" title="Get user support from the OSG">User Support</a></div>			
+		</div>
+<p />
+<p />
+<p />
+		<div class="box rounded bordered" id="menu">
+			<div class="box rounded-top high-contrast" id="head"><a href="/bin/view/Documentation/Release3/WebHome" title="Guides for Grid Administrators">Install OSG 3!</a></div>
+			<div id="item"><a href="/bin/view/Documentation/Release3.NavAdminCompute" title="Setup and Operate Compute Elements">Compute Elements</a></div>
+			<div id="item"><a href="/bin/view/Documentation/Release3.NavAdminStorage" title="Setup and Operate Storage Elements">Storage Elements</a></div>
+			<div id="item"><a href="/bin/view/Documentation/Release3.NavAdminSmallSites" title="Setup and Operate a small site or a OSG Campus Infrastructure">Small Sites/Campus Grids</a></div>
+                        <div id="item"><a href="/bin/view/Documentation/Release3.HelpProcedure" title="Get technical help">Admin Support/Help</a></div>
+			<div id="item"><a href="/bin/view/Documentation/Release3/WebHome" class="twikiCurrentWebHomeLink twikiLink">Current Release - 3.x</a></div>
+			<div id="item"><a href="/bin/view/ReleaseDocumentation/WebHome" class="twikiLink">Previous Release - 1.2</a></div>
+		</div>
+<p />
+<p />
+<p />
+<!--
+<p />
+		<div class="box rounded bordered" id="menu">
+			<div class="box rounded-top high-contrast" id="head"><a href="NavTechMain">Software Components</a></div>
+			<div id="item"><a href="BestmanOverview" title="">Bestman</a></div>
+			<div id="item"><a href="NavTechJobManagers" title="Job Managers">Job Managers</a></div>
+			<div id="item"><a href="NavTechGIP" title="Generic Information Provider">GIP</a></div>
+			<div id="item"><a href="Trash.ReleaseDocumentationNavTechGlexec" title="">Glexec</a></div>
+			<div id="item"><a href="NavTechGratia" title="">Gratia</a></div>
+			<div id="item"><a href="NavTechGUMS" title="">GUMS</a></div>
+			<div id="item"><a href="HadoopOverview" title="">Hadoop File System</a></div>
+			<div id="item"><a href="NavTechRepositories" title="">Repositories</a></div>
+			<div id="item"><a href="RsvOverview" title="">RSV</a></div>
+			<div id="item"><a href="NavTechVOMS" title="VOMS">VOMS</a></div>
+			<div id="item"><a href="XrootdOverview" title="Xrootd">Xrootd</a></div>
+		</div>
+<p />
+-->
+<p />
+<p />
+		<div class="box rounded bordered" id="menu">
+	  	        <div class="box rounded-top high-contrast" id="head"><a  style="" href="/bin/view/Documentation/Release3/NavOsgVO" class="twikiLink" title="Links to VO information">VO Administration</a></div>
+	  	        <div id="item"><a  style="" href="/bin/view/Documentation/SupportCenterDocHub" class="twikiLink" title="Support Center Information">VO Support Centers</a></div>
+	  	        <div id="item"><a  style="" href="/bin/view/Documentation/UserAuthAndPrivilege" class="twikiLink" title="Authorization of Users">User Authorization</a></div>
+	  	        <div id="item"><span class="twikiNewLink">VO Team Web<a  style="" href="/bin/edit/Trash/Trash/VirtualOrganizations/WebHome?topicparent=Documentation/Release3.AutoPyFactoryQA" rel="nofollow" title="VO Team Web (this topic does not yet exist; you can create it)">?</a></span></div>
+		</div>
+<p />
+<p />
+<p />
+		<div class="box rounded bordered" id="menu">
+			<div class="box rounded-top high-contrast" id="head"><a  style="" href="/bin/view/Documentation/HelpProcedure" class="twikiLink" title="Get Support/Help">Get Support/Help</a></div>
+			<div id="item"><a  style="" href="/bin/view/Documentation/Release3/HelpProcedure" class="twikiLink" title="Get Support/Help">Participate/Get Help</a></div>
+			<div id="item"><a  style="" href="http://osggoc.blogspot.com/" target="_top" title="Operations Blog">Operations Blog</a></div>
+			<div id="item"><img src="https://twiki.grid.iu.edu/twiki/pub/Documentation/WebLeftBarTop/campfire-logo.jpg" alt="campfire-logo.jpg" width='25' height='20' /><span class="twikiNewLink">Chat<a  style="" href="/bin/edit/Trash/Trash/SiteCoordination/ChatCalendar?topicparent=Documentation/Release3.AutoPyFactoryQA" rel="nofollow" title="Chat (this topic does not yet exist; you can create it)">?</a></span></div>
+		</div>
+<p />
+<p />
+<p />
+		<div class="box rounded bordered" id="menu">
+			<div class="box rounded-top high-contrast" id="head"><a  style="" href="/bin/view/Main/WebHome" class="twikiLink" title="TWiki Main Web">Documentation Links</a></div>
+			<div id="item"><a  style="" href="/bin/view/Documentation/Release3/NavContributeDocumentation" class="twikiLink" title="OSG Documentation System Information">How To Write Documents</a></div>
+			<div id="item"><a  style="" href="/bin/view/Documentation/DocFormattingRules" class="twikiLink" title="Formatting OSG Documents">Formatting Documents</a></div>
+                        <div id="item"><a  style="" href="/bin/view/Documentation/Release3/WebTopicCreator" class="twikiLink" title="Create a New TWiki Page"> <img width="16" alt="newtopic" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/newtopic.gif" height="16" border="0" /> Create New Topic</a></div>
+                        <div id="item"><a  style="" href="/bin/view/Main/WebList" class="twikiLink" title="List of Webs"> <img width="16" alt="index" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/index.gif" height="16" border="0" /> List of Webs</a></div>
+                        <div id="item"><a  style="" href="/bin/view/Documentation/Release3/WebIndex" class="twikiLink" title="Index of Topics"> <img width="16" alt="index" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/index.gif" height="16" border="0" /> Topic Index</a></div>
+                        <div id="item"><a href="/bin/view/Documentation/WebTopicList" class="twikiLink"> <img width="16" alt="index" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/index.gif" height="16" border="0" /> Topic List</a></div>
+                        <div id="item"><a  style="" href="/bin/view/Documentation/Release3/WebChanges" class="twikiLink" title="List of Pages that have Changed by Change Date"> <img width="16" alt="changes" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/changes.gif" height="16" border="0" /> Changes</a></div>
+                        <div id="item"><a  style="" href="/bin/view/Main/TWikiUsers" class="twikiLink" title="Alphabetized List of TWiki Users"> <img width="16" alt="person" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/person.gif" height="16" border="0" /> TWiki Users</a></div>
+		</div>
+<p />
+<p />
+	</div>
+<p />
+<p />
+<!--
+%NOPINCLUDE{"" warn="off"}% <ul>
+<li> <b><a href="/bin/view/Documentation/Release3/WebHome" class="twikiCurrentWebHomeLink twikiLink"> <img width="16" alt="home" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/home.gif" height="16" border="0" /> Documentation/Release3 Web</a></b>
+</li> <li> <a href="/bin/view/Documentation/Release3/WebTopicCreator?parent=AutoPyFactoryQA" target="_top"> <img width="16" alt="newtopic" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/newtopic.gif" height="16" border="0" /> Create New Topic</a>
+</li> <li> <a href="/bin/view/Documentation/Release3/WebTopicList" class="twikiLink"> <img width="16" alt="index" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/index.gif" height="16" border="0" /> Index</a>
+</li> <li> <a href="/bin/view/Documentation/Release3/WebSearch" class="twikiLink"> <img width="16" alt="searchtopic" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/searchtopic.gif" height="16" border="0" /> Search</a>
+</li> <li> <a href="/bin/view/Documentation/Release3/WebChanges" class="twikiLink"> <img width="16" alt="changes" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/changes.gif" height="16" border="0" /> Changes</a>
+</li> <li> <a href="/bin/view/Documentation/Release3/WebNotify" class="twikiLink"> <img width="16" alt="notify" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/notify.gif" height="16" border="0" /> Notifications</a>
+</li> <li> <span class="twikiNewLink"> <img width="16" alt="statistics" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/statistics.gif" height="16" border="0" /> Statistics<a href="/bin/edit/Documentation/Release3/WebStatistics?topicparent=Documentation/Release3.AutoPyFactoryQA" rel="nofollow" title=" <img width="16">?</a></span>
+</li> <li> <a href="/bin/view/Documentation/Release3/WebPreferences" class="twikiLink"> <img width="16" alt="wrench" align="top" src="/twiki/pub/TWiki/TWikiDocGraphics/wrench.gif" height="16" border="0" /> Preferences</a>
+</li></ul> 
+<p />
+<hr />
+%NOPINCLUDE{ "TWiki.WebLeftBarWebsList" }%
+-->
+<div class="twikiLeftBarPersonal">
+<p />
+</div>
+</div><!-- /patternLeftBarContents--></div><!-- /patternLeftBar-->
+</div><!-- /patternFloatWrap-->
+<div class="clear">&nbsp;</div>
+</div><!-- /patternOuter--></div><!-- /patternWrapper--><div id="patternTopBar"><div id="twikinetLogo"><a href="http://www.twiki.net/"><span>TWIKI.NET</span></a></div><div id="patternTopBarContents"><div class="twikiLeft"><span id="twikiLogo" class="twikiImage"><a href="http://www.opensciencegrid.org    "><img src="/twiki/pub/Main/WebHome/osg-logo.png    " border="0" alt="OpenScience Grid Website    " style="border:none;" /></a></span></div>
+<div class="twikiRight">
+<table cellpadding="0" cellspacing="0" border="0"><tr><td class="twikinetSearchJump twikinetSearchJumpLeft">
+ <ul>
+<li> <form name="jumpForm" action="/bin/view/Documentation/Release3/AutoPyFactoryQA"><input id="jumpFormField" type="text" class="twikiInputField" name="topic" value="" size="16" /><input type="submit" class="twikinetJumpButton" name="submit" value="" /></form>
+</li> <li> <form name="quickSearchForm" action="/bin/view/Documentation/Release3/WebSearch"><input type="text" class="twikiInputField" id="quickSearchBox" name="search" value="" size="18" /><input type="hidden" name="scope" value="all" /><input type="hidden" name="web" value="Documentation/Release3" /><input type="submit" size="5" class="twikinetSearchButton" name="submit" value="" /></form>
+</li> <li> </li></ul> 
+</td>
+<td class="twikinetSearchJumpRight"></td>
+</tr></table><br class="twikiClear" /></div></div></div><!-- /patternTopBar--><div id="twikinetTopToolBar"><div id="twikinetTopToolBarContents"><div class="twikinetWebName twikiLeft">
+<table cellpadding="0" cellspacing="0" border="0"><tr><td style="vertical-align:middle;">
+<h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="Documentation_Release3"></a>  <a href="/bin/view/Documentation/Release3/WebHome" class="twikiCurrentWebHomeLink twikiLink">Documentation.Release3</a> </span></h2>
+</td></tr></table>
+</div><!--/twikinetWebName-->
+<div class="twikinetToolBar twikiRight">
+<table cellpadding="0" cellspacing="0" border="0"><tr><td><a href="https://twiki.grid.iu.edu/bin/edit/Documentation/Release3/AutoPyFactoryQA?t=1493567476;nowysiwyg=1" rel="nofollow">
+<span class="rCRounded"><span class="rCTR"><span class="rCTL"></span><!--/rCTL-->
+<span class="twikiLinkLabel twikinetEditIcon"><span class='twikiAccessKey'>E</span>dit</span>
+</span><!--/rCTR--><span class="rCBR"><span class="rCBL"></span></span><!--/rCBR--></span><!--/rCRounded-->
+</a></td><td><a href="/bin/attach/Documentation/Release3/AutoPyFactoryQA" rel="nofollow">
+<span class="rCRounded"><span class="rCTR"><span class="rCTL"></span><!--/rCTL-->
+<span class="twikiLinkLabel"><span class='twikiAccessKey'>A</span>ttach</span>
+</span><!--/rCTR--><span class="rCBR"><span class="rCBL"></span></span><!--/rCBR--></span><!--/rCRounded-->
+</a></td><td><a href="/bin/genpdf/Documentation/Release3/AutoPyFactoryQA?pdftitle=AutoPyFactoryQA" rel="nofollow">
+<span class="rCRounded"><span class="rCTR"><span class="rCTL"></span><!--/rCTL-->
+<span class="twikiLinkLabel">PDF</span>
+</span><!--/rCTR--><span class="rCBR"><span class="rCBL"></span></span><!--/rCBR--></span><!--/rCRounded-->
+</a></td></tr></table>
+<br class="twikiClear" /></div><!--/patternToolBar--></div><!--/twikinetTopToolBarContents--></div><!--/twikinetTopToolBar--><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="twikinetBadge"><a href="http://www.twiki.net/"><img src="https://twiki.grid.iu.edu/twiki/pub/TWiki/TWikiNetSkin/twiki-badge-88x31.gif" alt="TWIKI.NET" width="88" height="31" border="0" /></a></div><!--/twikinetBadge--><div id="patternWebBottomBar"><p>
+<font size="-1">
+TWiki |
+<a href="https://ticket.grid.iu.edu/goc/twiki">Report Bugs</a> |
+<a href="https://twiki.grid.iu.edu/bin/view/Operations/IUPrivacyPolicy">Privacy Policy</a>
+</p>
+<p>
+<font size="-2">
+<span class="twikiRight"> <a href="http://twiki.org/"><img src="/twiki/pub/TWiki/TWikiLogos/T-logo-80x15.gif" alt="This site is powered by the TWiki collaboration platform" width="80" height="15" title="This site is powered by the TWiki collaboration platform" border="0" /></a></span>Copyright by the contributing authors. All material on this collaboration platform is the property of the contributing authors..
+</font>
+</p></div><!--/patternWebBottomBar--></div><!-- /patternBottomBarContents--></div><!-- /patternBottomBar-->
+</div><!-- /patternPage-->
+</div><!-- /patternPageShadow-->
+</div><!-- /patternScreen-->
+</body></html>
