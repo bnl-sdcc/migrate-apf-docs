@@ -1,0 +1,5 @@
+execute command 
+
+    $ mkdocs build
+
+the output is in directory site/ that is created by that command

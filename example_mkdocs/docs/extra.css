@@ -1,0 +1,43 @@
+h1 {
+  color: red;
+}
+
+pre {
+    width:100%;
+    margin:1em 0; /* Win IE tries to make this bigger otherwise */
+    font-size:13px;
+}
+
+
+.screen {
+    background: #E0F0E0;
+    border: 1px solid gray;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    white-space: pre;
+}
+
+.file
+{
+background: #FFFFCC; 
+border: 1px solid gray; 
+padding-right: 2px;
+padding-left: 2px;
+padding-top: .5em; 
+padding-bottom: .5em; 
+white-space: pre;  
+}
+
+.rootscreen
+{
+background: #FFDDBB; 
+border: 1px solid gray; 
+padding-right: 2px;
+padding-left: 2px;
+padding-top: .5em; 
+padding-bottom: .5em; 
+white-space: pre;  
+}
+

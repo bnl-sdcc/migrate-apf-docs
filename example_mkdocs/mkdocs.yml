@@ -1,0 +1,6 @@
+site_name: My Docs
+pages:
+    - Home: index.md
+    - QA: AutoPyFactoryQA.md
+theme: readthedocs
+extra_css: [extra.css]
