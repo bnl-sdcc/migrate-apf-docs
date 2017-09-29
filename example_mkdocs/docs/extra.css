@@ -71,3 +71,15 @@ padding-bottom: .5em;
 white-space: pre;  
 }
 
+.tg  {border-collapse:collapse;border-spacing:0;width:100%}
+.tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:12px;font-weight:normal;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-raw31{font-weight:bold;color:#0055ff;text-align:left;width:20%}
+.tg .tg-raw32{text-align:left}
+.tg .tg-raw33{text-align:left;width:10%}
+.tg .tg-raw21{font-weight:bold;color:#0055ff;text-align:left;width:20%}
+.tg .tg-raw22{text-align:left}
+.tg .tg-header{font-weight:bold;background-color:#c0c0c0;text-align:center}
+.tg .tg-splitheader{font-weight:bold;background-color:#e0e0e0;text-align:center}
+
+
