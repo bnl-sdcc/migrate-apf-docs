@@ -212,8 +212,8 @@ Also, when it is installed, try running command apf-queue-status
 %UCL_PROMPT_ROOT% apf-queue-status
 Mon Aug 10 15:12:24 2015
 -----------------------------------------------------------------
-ANALY_BNL_LONG-gridgk04-htcondor 	UNSUB = 0	IDLE = 4	RUNNING = 29	COMPLETE = 0	HELD = 0	ERROR = 0	REMOVED = 0	
-ANALY_BNL_LONG-gridgk05      	UNSUB = 0	PENDING = 10	STAGE_IN = 0	ACTIVE = 10	STAGE_OUT = 0	SUSP = 0	DONE = 0	FAILED = 0	
+ANALY_BNL_LONG-gridgk04-htcondor    UNSUB = 0   IDLE = 4    RUNNING = 29    COMPLETE = 0    HELD = 0    ERROR = 0   REMOVED = 0 
+ANALY_BNL_LONG-gridgk05         UNSUB = 0   PENDING = 10    STAGE_IN = 0    ACTIVE = 10 STAGE_OUT = 0   SUSP = 0    DONE = 0    FAILED = 0  
 </pre>
 
 
@@ -355,6 +355,4 @@ Note: fixed in version 2.4.10
 This happens due a bug in the code that creates the condor_q command line incorrectly, with a missing white space between arguments.
 <br>
 Note: fixed in version 2.4.10
-
-
 
