@@ -1,31 +1,6 @@
 Questions and Answers related AutoPyFactory
 ===========================================
 
--   [1 About this Document](#1-about-this-document)
--   [2 Applicable versions](#2-applicable-versions)
--   [3 Questions and answers](#3-questions-and-answers)
-    -   [3.1 how do I interpret comments like "fixed in version X" at the same time that "This documentation applies to the latest version of APF: Y"?](#31-how-do-i-interpret-comments-like-fixed-in-version-x-at-the-same-time-that-this-documentation-applies-to-the-latest-version-of-apf-y)
-    -   [3.2 what do I do if I want to change the path of the log files?](#32-what-do-i-do-if-I-want-to-change-the-path-of-the-log-files)
-    -   [3.3 how can I submit to a remote HTCondor schedd?](#33-how-can-i-submit-to-a-remote-htcondor-schedd)
-    -   [3.4 why pilots submitted to a CREAM CE fail?](#34-why-pilots-submitted-to-a-cream-ce-failed)
-    -   [3.5 to which type of resource targets I can submit pilots with AutoPyFactory?](#35-to-which-type-of-resource-targets-i-can-submit-pilots-with-autopyfactory)
-    -   [3.6 how do I find out the version of AutoPyFactory I have installed?](#36-how-do-i-find-out-the-version-of-autopyfactory-i-have-installed)
-    -   [3.7 how should I configure the factory if I want to renew the proxies myself?](#37-how-should-i-configure-the-factory-if-I-want-to-renew-the-proxies-myself)
-    -   [3.8 how can I add environment variables to the condor submit file?](#38-how-can-i-add-environment-variables-to-the-condor-submit-file)
-    -   [3.9 how can I add any arbitrary line to the condor submit file?](#39-how-can-i-add-any-arbitrary-line-to-the-condor-submit-file)
-    -   [3.10 how can I tune the number of pilots to be submitted depending on the number of activated jobs in PanDA and the number of pilots still pending?](#310-how-can-i-tune-the-number-of-pilots-to-be-submitted-depending-on-the-number-of-activated-jobs-in-panda-and-the-number-of-pilots-still-pending)
-    -   [3.11 how can I run a factory with a special setup?](#311-how-can-i-run-a-factory-with-a-special-setup)
-    -   [3.12 my factory is not submitting pilots anymore for a given queue, why?](#312-my-factory-is-not-submitting-pilots-anymore-for-a-given-queue-why)
-    -   [3.13 I do not want my factory to show up in the generic AutoPyFactory web monitor](#313-i-do-not-want-my-factory-to-show-up-in-the-generic-autopyfactory-web-monitor)
-    -   [3.14 how can I increase the verbosity level in the log files?](#314-how-can-i-increase-the-verbosity-level-in-the-log-files)
-    -   [3.15 How can I change the non-root running user?](#315-How-can-i-change-the-non-root-running-user)
-    -   [3.16 How can I force the value of variable arguments in the condor submit file to be enclosed in between quotes?](#316-How-can-i-force-the-value-of-variable-arguments-in-the-condor-submit-file-to-be-enclosed-in-between-quotes)
-    -   [3.17 I have variables in the [DEFAULT] section whose value requires interpolation, and they fail on some sections](#317-i-have-variables-in-the-default-section-whose-value-requires-interpolation-and-they-fail-on-some-sections)
-    -   [3.18 what do I do when I do not want to use an X509 proxy?](#318-what-do-i-do-when-i-do-not-want-to-use-an-x509-proxy)
--   [4 Troubleshooting](#4-troubleshooting)
-    -   [4.1 qcl\_dir](#41-qcl95dir)
-    -   [4.2 condor\_q against remote pool](#42-condor95q-against-remote-pool)
-
 1 About this Document
 =====================
 
