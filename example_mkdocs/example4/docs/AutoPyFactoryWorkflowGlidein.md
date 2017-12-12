@@ -24,9 +24,6 @@
 This document explains how to setup <a href="../index.html" class="twikiLink">AutoPyFactory</a> to work in a glidein style fashion
 <p />
 <p />
-on    
-on    
-<p />
 <p />
 <h1><a name="2_Applicable_versions"></a> 2  Applicable versions </h1>
 <p />
@@ -47,7 +44,7 @@ This line will typically be included in the condor description file being used t
 The particular string <code>+MATCH_APF_QUEUE</code> tells the AutoPyFactory that those jobs are to be managed by the factory. 
 The different values of the <code>label</code> will allow the factory to treat them differently. All payload jobs with the same <code>label</code> will be managed together. Payload jobs with different <code>label</code> will be managed separately. 
 <p />
-As it was explained <a href="AutoPyFactoryConfiguration.html#5_3_queues_conf" target="_top">here</a>, and APFQueue can be interpreted as the unique combination of a wms queue and a batch queue. in this particular type of workflow, the value of the <code>+MATCH_APF_QUEUE</code> classad represents the wms queue. 
+As it was explained <a href="../AutoPyFactoryConfiguration/" target="_top">here</a>, and APFQueue can be interpreted as the unique combination of a wms queue and a batch queue. in this particular type of workflow, the value of the <code>+MATCH_APF_QUEUE</code> classad represents the wms queue. 
 <p />
 Then, the batch queue, the system where the pilots will be submitted to, can be, for example, a remote Compute Element, or another condor pool. 
 <p />
@@ -76,7 +73,7 @@ batchsubmitplugin = CondorGT5
 ...
 </pre>
 <p />
-For the rest of variables, see the <a href="AutoPyFactoryReferenceManual.html#6_queues_conf" target="_top">Reference Manual</a>
+For the rest of variables, see the <a href="../AutoPyFactoryReferenceManual/" target="_top">Reference Manual</a>
 <p />
 <p />
 <h1><a name="5_Example_2"></a> 5  Example 2 </h1>
@@ -101,7 +98,7 @@ batchsubmit.condorlocal.submitargs = -remote &lt;remote_schedd&gt;
 ...
 </pre>
 <p />
-For the rest of variables, see the <a href="AutoPyFactoryReferenceManual.html#6_queues_conf" target="_top">Reference Manual</a>
+For the rest of variables, see the <a href="../AutoPyFactoryReferenceManual/" target="_top">Reference Manual</a>
 <p /> 
 
 

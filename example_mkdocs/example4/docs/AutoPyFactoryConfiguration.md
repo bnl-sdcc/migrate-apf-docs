@@ -70,7 +70,7 @@ As the python package ConfigParser is being used to digest the configuration fil
 <p />
 <h1><a name="4_Reference_Manual"></a> 4  Reference Manual </h1>
 <p />
-A detailed description of all configuration variables used in AutoPyFactory can be found <a href="AutoPyFactoryReferenceManual.html">here</a>
+A detailed description of all configuration variables used in AutoPyFactory can be found <a href="../AutoPyFactoryReferenceManual/">here</a>
 <p />
 <h1><a name="5_Configuration_files"></a> 5  Configuration files </h1>
 <p />
@@ -155,7 +155,7 @@ A detailed description of this file variables can be found in the <a href="AutoP
 It is the file where each APFQueue is defined. 
 AutoPyFactory is built around the concept of APFQueues. An APFQueue can be seen as the unique combination of these concepts: <ul>
 <li> a wms system queue: where the payload jobs are waiting. The concept of wms queue is an abstraction, and it will depend on what WMS System is being used each case. Whe the WMS System is <code>PanDA</code>, the wms queue is the panda queue. When the WMS System is a condor pool, a wms queue is each different value of the classad <code>+MATCH_APF_QUEUE</code> that jobs in that condor pool carry.
-</li> <li> a batch system queue: where the pilots will be submitted. It could be a CE based on globus GT5, or GT2. It could be a CE based on CREAM. A CE based on HTCondor-CE. It could be an Amazon EC2 workflow managed by condor. It can be a remote condor pool. For all possibilities, chech the <a href="AutoPyFactoryReferenceManual.html" target="_top">Reference Manual</a>
+</li> <li> a batch system queue: where the pilots will be submitted. It could be a CE based on globus GT5, or GT2. It could be a CE based on CREAM. A CE based on HTCondor-CE. It could be an Amazon EC2 workflow managed by condor. It can be a remote condor pool. For all possibilities, chech the <a href="../AutoPyFactoryReferenceManual/" target="_top">Reference Manual</a>
 </li></ul> 
 <p />
 That, plus an algorithm to decide how many pilots to submit each cycle.
@@ -168,19 +168,19 @@ Therefore, each APFQueue in AutoPyFactory needs to set, at least, these elements
 </li> <li> the plugin(s) to decide how many new pilots to submit each cycle 
 </li></ul> 
 <p />
-The complete list of configuration parameters can be found <a href="AutoPyFactoryReferenceManual.html#6_queues_conf" target="_top">Reference Manual</a>
+The complete list of configuration parameters can be found <a href="../AutoPyFactoryReferenceManual/" target="_top">Reference Manual</a>
 <p />
 For each APFQueue, a section is set in this file. All APFQueues sections become threads running asynchronously. 
 <p />
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="5_5_proxy_conf"></a> 5.5  proxy.conf </span></h2>
 <p />
 It is the file where the x509 proxy files are set, when needed. 
-The complete list of configuration parameters can be found <a href="AutoPyFactoryReferenceManual.html#7_proxy_conf" target="_top">Reference Manual</a>
+The complete list of configuration parameters can be found <a href="../AutoPyFactoryReferenceManual/" target="_top">Reference Manual</a>
 <p />
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="5_6_monitor_conf"></a> 5.6  monitor.conf </span></h2>
 <p />
 It is the file to setup, if needed, where the factory will send information periodically for web monitor. 
-The complete list of configuration parameters can be found <a href="AutoPyFactoryReferenceManual.html#8_monitor_conf" target="_top">Reference Manual</a>
+The complete list of configuration parameters can be found <a href="../AutoPyFactoryReferenceManual/" target="_top">Reference Manual</a>
 <p />
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="5_7_mappings_conf"></a> 5.7  mappings.conf </span></h2>
 <p />
@@ -189,11 +189,11 @@ It defines completely the behavior of the factory. Unless you are an expert on t
 <p />
 <h1><a name="6_Workflows"></a> 6  Workflows </h1>
 <p /> <ul>
-<li> Configuration for WMS being PanDA <a href="AutoPyFactoryWorkflowPanda.html" target="_top">here</a>
-</li> <li> glideins based workflows. Some details on how to configure the factory to work in a glidein style are <a href="AutoPyFactoryWorkflowGlidein.html" target="_top">here</a>
-</li> <li> Submission to CREAM CE <a href="AutoPyFactoryWorkflowCream.html" target="_top">here</a>
-</li> <li> Submission to NorduGrid CE <a href="AutoPyFactoryWorkflowNorduGrid.html" target="_top">here</a>
-</li> <li> Submission to EC2 <a href="AutoPyFactoryWorkflowEC2.html" target="_top">here</a>
+<li> Configuration for WMS being PanDA <a href="../AutoPyFactoryWorkflowPanda/" target="_top">here</a>
+</li> <li> glideins based workflows. Some details on how to configure the factory to work in a glidein style are <a href="../AutoPyFactoryWorkflowGlidein/" target="_top">here</a>
+</li> <li> Submission to CREAM CE <a href="../AutoPyFactoryWorkflowCream/" target="_top">here</a>
+</li> <li> Submission to NorduGrid CE <a href="../AutoPyFactoryWorkflowNorduGrid/" target="_top">here</a>
+</li> <li> Submission to EC2 <a href="../AutoPyFactoryWorkflowEC2/" target="_top">here</a>
 </li></ul>  
 
 </body></html>

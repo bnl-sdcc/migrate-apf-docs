@@ -55,8 +55,8 @@ configuration is beyond the scope of this documentation. Ensure that it is worki
 properly before proceeding. 
 <p />
 2) Install a grid client and set up the grid certificate+key under the user APF will run as. 
-See  <a href="AutoPyFactoryDeployment.html#4_2_sysconfig_autopyfactory" class="twikiCurrentTopicLink twikiAnchorLink">sysconfig section</a> for details.
-Please read the section <a href="AutoPyFactoryDeployment.html#4_4_proxy_conf" class="twikiCurrentTopicLink twikiAnchorLink">proxy.conf</a> regarding the proxy.conf file, so you see what 
+See  sysconfig section in <a href="../AutoPyFactoryConfiguration/">configuration</a> for details.
+Please read the section proxy.conf in <a href="../AutoPyFactoryConfiguration/">configuration</a> regarding the proxy configuration file, so you see what 
 will be needed. Make sure voms-proxy-* commands work properly. 
 <p />
 3) We distribute now AutoPyFactory RPMs using the Open Science Grid (OSG) yum infrastructure. 
@@ -299,7 +299,7 @@ AutoPyFactory does not set explicitly it as a dependency, so it will not be inst
 <p />
 <h1><a name="5_Configuration"></a> 5  Configuration </h1>
 <p />
-The details about configuration variables in AutoPyFactory can be found <a href="AutoPyFactoryConfiguration.html" target="_top">here</a>
+The details about configuration variables in AutoPyFactory can be found <a href="AutoPyFactoryConfiguration/" target="_top">here</a>
 <p />
 <p />
 <p />
@@ -342,7 +342,7 @@ Only difference between version 2.4.6 and previous 2.4.x versions is the locatio
 Configuration files in 2.4.6 are deployed directly under directory <code>/etc/autopyfactory/</code>
 <p />
 2.4.6 respects the new nomenclature for files, directories and processes introduced in 2.4.0.
-For factories being migrated from 2.3.x to 2.4.6 it is, therefore, highly recommended to read first section <a href="AutoPyFactoryDeployment.html#5_4_upgrading_a_factory_from_2_3" class="twikiCurrentTopicLink twikiAnchorLink">upgrading a factory from 2.3</a>
+For factories being migrated from 2.3.x to 2.4.6 it is, therefore, highly recommended to read first section on upgrading a factory from 2.3</a>
 <p />
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="6_3_version_2_4_0"></a> 6.3  version 2.4.0 </span></h2>
 <p />
@@ -452,13 +452,13 @@ Option 2: copy the old one
 <p />
 In the second case, some adjustments may be needed:
 <p /> <ul>
-<li> replace        factoryUser = apf                           -->  factoryUser = autopyfactory
-</li> <li> replace        queueConf = <a href="file:///etc/apf/queues.conf" target="_top">file:///etc/apf/queues.conf</a>     -->  queueConf = <a href="file:///etc/autopyfactory/queues.conf" target="_top">file:///etc/autopyfactory/queues.conf</a>
-</li> <li> replace        queueDirConf = /etc/apf/queues.d/           -->  queueDirConf = /etc/autopyfactory/queues.d/
-</li> <li> replace        proxyConf = /etc/apf/proxy.conf             -->  proxyConf = /etc/autopyfactory/proxy.conf
-</li> <li> replace        monitorConf = <a href="file:///etc/apf/monitor.conf" target="_top">file:///etc/apf/monitor.conf</a>  -->  monitorConf = /etc/autopyfactory/monitor.conf
-</li> <li> replace        baseLogDir = /home/apf/factory/logs         -->  baseLogDir = /home/autopyfactory/factory/logs
-</li> <li> add line                        mappingsConf = /etc/autopyfactory/mappings.conf
+<li> replace         factoryUser = apf                           -->  factoryUser = autopyfactory
+</li> <li> replace   queueConf = file:///etc/apf/queues.conf     -->  queueConf = file:///etc/autopyfactory/queues.conf
+</li> <li> replace   queueDirConf = /etc/apf/queues.d/           -->  queueDirConf = /etc/autopyfactory/queues.d/
+</li> <li> replace   proxyConf = /etc/apf/proxy.conf             -->  proxyConf = /etc/autopyfactory/proxy.conf
+</li> <li> replace   monitorConf = file:///etc/apf/monitor.conf  -->  monitorConf = /etc/autopyfactory/monitor.conf
+</li> <li> replace   baseLogDir = /home/apf/factory/logs         -->  baseLogDir = /home/autopyfactory/factory/logs
+</li> <li> add line  mappingsConf = /etc/autopyfactory/mappings.conf
 </li></ul> 
 <p />
 7. queues.conf
@@ -560,7 +560,7 @@ You may delete them at some point (not right away, since they will include condo
 <p />
 In order to upgrade a factory from old stable version 2.3.1 to latest 2.4.x series, a few things need to be taken into account.
 <p /> <ul>
-<li> The name of files, directories, and processes has changed. A detailed explanation is in the above section <a href="AutoPyFactoryDeployment.html#5_2_version_2_4_0" class="twikiCurrentTopicLink twikiAnchorLink">version 2.4.0</a>
+<li> The name of files, directories, and processes has changed. A detailed explanation is in the above section version 2.4.0
 </li> <li> a new optional variable has been included in the file <code>proxy.conf</code>: <code><b>voms.args</b></code>
 </li> <li> a new mandatory option has been added to the new file <code>autopyfactory.conf</code>: <code><b>mappingsConf</b></code>
 </li></ul> 

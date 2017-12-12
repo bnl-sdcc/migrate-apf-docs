@@ -25,9 +25,6 @@
 <p />
 This document describes how to configure AutoPyFactory when the WMS is PanDA.
 <p />
-on    
-on    
-<p />
 <p />
 <h1><a name="2_Applicable_versions"></a> 2  Applicable versions </h1>
 <p />

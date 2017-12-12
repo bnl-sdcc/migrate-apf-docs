@@ -10,7 +10,7 @@
 <br>
 <br>
 
-<li> <a href="#1_About_this_Document">1  About this Document</a>
+<li> 1  About this Document</a>
 </li> <li> 2  Applicable versions</a>
 </li> <li> 3  Understanding plugins in AutoPyFactory</a> <ul>
 <li> 3.1  Nomenclature</a>
@@ -61,7 +61,7 @@ This documentation applies to the latest version of APF: 2.4.9
 <p />
 <h1><a name="3_Understanding_plugins_in_AutoP"></a> 3  Understanding plugins in AutoPyFactory </h1>
 <p />
-Basic description of the different types of plugins and their purposes can be found <a href="AutoPyFactory.html#3_1_Plugins_based_architecture" target="_top">here</a>
+Basic description of the different types of plugins and their purposes can be found in section "Plugins-based architecture" in <a href="../index.html" target="_top">here</a>
 <p />
 There are two basic ideas to keep in mind to write a new plugin for AutoPyFactory: <ul>
 <li> plugins have an API

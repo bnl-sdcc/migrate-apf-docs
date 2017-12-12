@@ -64,7 +64,7 @@ This documentation applies to the latest version of APF: 2.4.9
 <p />
 <h1><a name="3_Format_of_the_configuration_fi"></a> 3  Format of the configuration files </h1>
 <p />
-An explanation of the format of the configuration files in AutoPyFactory can be seen <a href="AutoPyFactoryConfiguration.html#3_Format_of_the_configuration_fi" target="_top">here</a>
+An explanation of the format of the configuration files in AutoPyFactory can be seen <a href="../AutoPyFactoryConfiguration/" target="_top">here</a>
 <p />
 <h1><a name="4_sysconfig_autopyfactory"></a> 4  sysconfig/autopyfactory </h1>
 <p />
@@ -224,7 +224,7 @@ env | sort >> $CONSOLE_LOG
   </tr>
 <tr>
     <td class="tg-raw31">queueConf</td>
-    <td class="tg-raw32">URI plus path to the configuration file for APF queues.  NOTE: Must be expressed as a URI (<a href="file://" target="_top">file://</a> or <a href="http://" target="_top">http://</a>) Cannot be used at the same time that queueDirConf </td>
+    <td class="tg-raw32">URI plus path to the configuration file for APF queues.  NOTE: Must be expressed as a URI (file:// or http://) Cannot be used at the same time that queueDirConf </td>
     <td class="tg-raw33"> </td>
   </tr>
 <tr>
@@ -300,7 +300,7 @@ env | sort >> $CONSOLE_LOG
   </tr>
 <tr>  
     <td class="tg-raw31">executable</td>
-    <td class="tg-raw32"> path to the script which will be executed.  As the purpose of the factory is to submit jobs to the different resources (local batch queues, grid sites, etc.) an executable, with its corresponding list of input arguments, is needed.  This executable can be anything.  <br> In principle, details on how to install the executable and the list of arguments are out of the scope of this documentation. However, in the case of ATLAS experiment, executable documentation can be found <a href="AutoPyFactoryWorkflowAtlas.html#4_Wrapper" target="_top">here</a></td> 
+    <td class="tg-raw32"> path to the script which will be executed.  As the purpose of the factory is to submit jobs to the different resources (local batch queues, grid sites, etc.) an executable, with its corresponding list of input arguments, is needed.  This executable can be anything.  <br> In principle, details on how to install the executable and the list of arguments are out of the scope of this documentation. However, in the case of ATLAS experiment, executable documentation can be found <a href="../AutoPyFactoryWorkflowAtlas/" target="_top">here</a></td> 
     <td class="tg-raw33"> </td> 
   </tr> 
 <tr>  

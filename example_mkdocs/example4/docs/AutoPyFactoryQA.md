@@ -64,7 +64,7 @@ It can also mean that we forgot to update the message "This documentation applie
 <p />
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_2_what_do_I_do_if_I_want_to_ch"></a> 3.2  what do I do if I want to change the path of the log files? </span></h2>
 <p />
-Some explanation can be found <a href="AutoPyFactoryConfiguration.html#5_2_logrotation" target="_top">here</a> 
+Some explanation can be found <a href="../AutoPyFactoryConfiguration/" target="_top">here</a> 
 <p />
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_3_how_can_I_submit_to_a_remote"></a> 3.3  how can I submit to a remote HTCondor schedd? </span></h2>
 <p />
@@ -144,18 +144,18 @@ renew = False
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_8_how_can_I_add_environment_va"></a> 3.8  how can I add environment variables to the condor submit file? </span></h2>
 <p />
 Using the configuration variable <code>batchsubmit.&lt;plugin&gt;.environ</code>. 
-For details, check the <a href="AutoPyFactoryReferenceManual.html#6_5_Batch_Submit_Plugin_variable" target="_top">Reference Manual</a>
+For details, check the <a href="../AutoPyFactoryReferenceManual/" target="_top">Reference Manual</a>
 <p />
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_9_how_can_I_add_any_arbitrary"></a> 3.9  how can I add any arbitrary line to the condor submit file? </span></h2>
 <p />
 Using the configuration variable <code>batchsubmit.&lt;plugin&gt;.condor_attributes</code>. 
-For details, check the <a href="AutoPyFactoryReferenceManual.html#6_5_Batch_Submit_Plugin_variable" target="_top">Reference Manual</a>
+For details, check the <a href="../AutoPyFactoryReferenceManual/" target="_top">Reference Manual</a>
 <p />
 <p />
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_10_how_can_I_tune_the_number_o"></a> 3.10  how can I tune the number of pilots to be submitted depending on the number of activated jobs in PanDA and the number of pilots still pending? </span></h2>
 <p />
 The sched plugin <code>Ready</code> checks the number of activated jobs, the number of idle pilots, and returns the difference. 
-For details on the sched plugins parameters, check the <a href="AutoPyFactoryReferenceManual.html#6_4_Sched_Plugin_variables" target="_top">Reference Manual</a>
+For details on the sched plugins parameters, check the <a href="../AutoPyFactoryReferenceManual/" target="_top">Reference Manual</a>
 <p />
 <h2 class="twikinetRoundedAttachments"><span class="twikinetHeader"><a name="3_11_how_can_I_run_a_factory_wit"></a> 3.11  how can I run a factory with a special setup? </span></h2>
 <p />
